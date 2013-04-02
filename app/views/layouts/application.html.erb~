@@ -32,8 +32,8 @@
     <%= link_to "Sign out", destroy_user_session_path, method: :delete, :class => "small button" %>
   <% else %>
 
-        <%= link_to "Create a new account", new_user_registration_path, :class => "small button" %>
-        <%= link_to "Sign in", new_user_session_path, :class => "small button" %>
+        <%= link_to "Create a new account", new_user_registration_path, :remote => true, :data => { :replace => "#modal-container", "reveal-id" => "myModal" }, :class => "small button" %>
+        <%= link_to "Sign in", new_user_session_path, :remote => true, :data => { :replace => "#modal-container", "reveal-id" => "myModal" }, :class => "small button" %>
 
   <% end %>
       </div>

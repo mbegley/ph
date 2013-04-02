@@ -5,7 +5,7 @@ gem 'rails', '3.2.11'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'sqlite3'
+#gem 'sqlite3'
 
 
 # Gems used only for assets and not required
@@ -19,6 +19,8 @@ group :assets do
 
   gem 'uglifier', '>= 1.0.3'
 end
+
+gem 'zurb-foundation', '4.0.7'
 
 gem 'jquery-rails'
 
@@ -36,3 +38,17 @@ gem 'jquery-rails'
 
 # To use debugger
 # gem 'debugger'
+
+gem 'mysql2'
+
+gem 'devise', '2.1.0'
+
+group :test, :development do
+  gem 'rspec-rails', '~> 2.11'
+end
+
+group :test do
+  gem 'capybara', '1.1.2'
+  gem 'factory_girl', '2.6.4'
+  gem 'email_spec', '1.2.1'
+end
